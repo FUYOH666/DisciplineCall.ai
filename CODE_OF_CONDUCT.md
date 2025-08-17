@@ -118,7 +118,7 @@ If you experience or witness unacceptable behavior, or have any other concerns, 
 
 ### **📞 Report Channels**
 - **📧 Primary:** iamfuyoh@gmail.com
-- **💼 LinkedIn:** [aleksandr-mordvinov](https://linkedin.com/in/aleksandr-mordvinov)
+- **💼 LinkedIn:** [aleksandr-mordvinov](https://https://www.linkedin.com/in/aleksandr-mordvinov-3bb853325/)
 - **🔒 Anonymous:** Available through GitHub private messaging
 
 ### **📋 What to Include**
