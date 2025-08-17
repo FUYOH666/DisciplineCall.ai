@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  # Main application
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://disciplinecall:password@db:5432/disciplinecall
+      - REDIS_URL=redis://redis:6379/0
+      - DEPLOYMENT_MODE=cloud
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./audio_cache:/app/audio_cache
+    restart: unless-stopped
+
+  # PostgreSQL database
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=disciplinecall
+      - POSTGRES_USER=disciplinecall
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  # Redis for caching and task queue
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # Celery worker for background tasks
+  worker:
+    build: .
+    command: celery -A backend.tasks worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://disciplinecall:password@db:5432/disciplinecall
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./audio_cache:/app/audio_cache
+    restart: unless-stopped
+
+  # Celery beat for scheduled tasks
+  scheduler:
+    build: .
+    command: celery -A backend.tasks beat --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://disciplinecall:password@db:5432/disciplinecall
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # Frontend (optional - for web dashboard)
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
