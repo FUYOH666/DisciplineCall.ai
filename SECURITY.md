@@ -153,7 +153,7 @@ Public recognition for responsible disclosure (with permission)
 
 **Primary Contact:**
 - **📧 Email:** iamfuyoh@gmail.com
-- **💼 LinkedIn:** [aleksandr-mordvinov](https://https://www.linkedin.com/in/aleksandr-mordvinov-3bb853325/)
+- **💼 LinkedIn:** [aleksandr-mordvinov](https://www.linkedin.com/in/aleksandr-mordvinov-3bb853325/)
 
 **Business Hours:** Monday-Friday, 9 AM - 6 PM (Moscow Time)
 **Emergency Response:** 24/7 for critical vulnerabilities
