@@ -9,7 +9,7 @@ We take the security of DisciplineCall.ai seriously. If you discover a security 
 **⚠️ DO NOT** create public GitHub issues for security vulnerabilities.
 
 **✅ Please contact us directly:**
-- **📧 Email:** aleksandrmordvinovv@gmail.com
+- **📧 Email:** iamfuyoh@gmail.com
 - **🔒 Subject:** "[SECURITY] DisciplineCall.ai Vulnerability Report"
 - **🌏 PGP:** Available upon request for sensitive reports
 
@@ -152,7 +152,7 @@ Public recognition for responsible disclosure (with permission)
 ## 📞 **Security Contact**
 
 **Primary Contact:**
-- **📧 Email:** aleksandrmordvinovv@gmail.com
+- **📧 Email:** iamfuyoh@gmail.com
 - **💼 LinkedIn:** [aleksandr-mordvinov](https://linkedin.com/in/aleksandr-mordvinov)
 
 **Business Hours:** Monday-Friday, 9 AM - 6 PM (Moscow Time)

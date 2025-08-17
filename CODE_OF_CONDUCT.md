@@ -117,7 +117,7 @@ This Code of Conduct applies within all project spaces, and also applies when an
 If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting the project team:
 
 ### **📞 Report Channels**
-- **📧 Primary:** aleksandrmordvinovv@gmail.com
+- **📧 Primary:** iamfuyoh@gmail.com
 - **💼 LinkedIn:** [aleksandr-mordvinov](https://linkedin.com/in/aleksandr-mordvinov)
 - **🔒 Anonymous:** Available through GitHub private messaging
 
