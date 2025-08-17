@@ -17,7 +17,7 @@
 
 ---
 
-**Revolutionary AI assistant that proactively calls you 3 times a day, helping build iron discipline and achieve goals through personalized voice coaching.**
+**AI assistant that proactively calls you 3 times a day, helping build discipline and achieve goals through personalized voice coaching.**
 
 ## 🎯 **What is DisciplineCall.ai?**
 
